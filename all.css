@@ -1,0 +1,44 @@
+
+.L24Text {
+  font-family: Roboto;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 100;
+  color: #333;
+}
+
+
+.t24its {
+  font-weight: 200;
+  color: white;
+  font-size: 80%;
+}
+.t24h {
+  font-weight: 600;
+  position: relative;
+  color: #fff;
+  top: 25px;
+  left: -5%;
+}
+.t24to {
+  font-weight: 300;
+  color: #fc5300;
+  font-size: 60%;
+  position: relative;
+  left: -6%;
+}
+.t24m {
+  font-weight: 400;
+  color: #bbb;
+  position: relative;
+  top: 18px;
+  left: -8%;
+}
+.t24a {
+  font-weight: 300;
+  color: #b5f800;
+  font-size: 70%;
+  position: relative;
+  top: 5px;
+  left: -8%;
+}
