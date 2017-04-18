@@ -52,7 +52,7 @@ Module.register("MMM-TextClock",{
 
 		// 24H Text layout
 		if (this.config.layout == "Line" ) {
-			timeHour = now.format(hourSymbol); // remember to change to hourSymbol
+			timeHour = now.format(hourSymbol); 
 		  wrapper.className = "L24Text";
 			one = this.translate('ONE');
 			two = this.translate('TWO');
