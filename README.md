@@ -2,7 +2,9 @@
 
 This module for the [MagicMirror](https://github.com/MichMich/MagicMirror) give you the time in a stylish word styled clock!
 
-
+![Image of textclockline](textclock1.png)
+![Image of textclockfielden](textclock2png)
+![Image of textclockfieldse](textclock3.png)
 
 
 ## Installation
