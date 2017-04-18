@@ -2,6 +2,9 @@
 
 This module for the [MagicMirror](https://github.com/MichMich/MagicMirror) give you the time in a stylish word styled clock!
 
+
+
+
 ## Installation
 
   1\. Execute the following commands to install the module:
@@ -28,7 +31,7 @@ git clone https://github.com/brobergp/MMM-TextClock.git # clone this repository
 ````
 
 
-## customization
+## Customization
 
   Copy the code from the all.css and/or language css to your own custom.css and change whatever you like about the font, color etc.
   To change the style of the marked words on the clock Field you have to add the css code directily in the config file in the "marked" option.
