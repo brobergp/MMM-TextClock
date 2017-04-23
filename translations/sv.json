@@ -19,7 +19,7 @@
 	"ELEVEN": "ELVA",
 	"TWELVE": "TOLV",
 	"OCLOCK": "O'CLOCK",
-	
+
 	"THIRTEEN": "TRETTON",
 	"FORTEEN": "FJORTON",
 	"FIFTEEN": "FEMTON",
@@ -31,5 +31,6 @@
 	"FORTY": "FYRTIO",
 	"FIFTY": "FEMTIO",
 	"OH": " ",
-	"HUNDRED": "HUNDRA"
+	"HUNDRED": "NOLLNOLL",
+	"ZERO": "NOLL"
 }

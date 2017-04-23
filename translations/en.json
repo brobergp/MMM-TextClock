@@ -19,7 +19,7 @@
 	"TWELVE": "TWELVE",
 	"TWENTY": "TWENTY",
 	"OCLOCK": "O'CLOCK",
-	
+
 	"THIRTEEN": "THIRTEEN",
 	"FORTEEN": "FORTEEN",
 	"FIFTEEN": "FIFTEEN",
@@ -31,7 +31,8 @@
 	"FORTY": "FORTY",
 	"FIFTY": "FIFTY",
 	"OH": "OH",
-	"HUNDRED": "HUNDRED"
+	"HUNDRED": "HUNDRED",
+	"ZERO": "ZERO"
 
 
 

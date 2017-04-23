@@ -48,11 +48,9 @@ Module.register("MMM-TextClock",{
 		timeMinute = now.format("mm");
 
 
-
-
 		// 24H Text layout
 		if (this.config.layout == "Line" ) {
-			timeHour = now.format(hourSymbol); 
+			timeHour = now.format(hourSymbol);
 		  wrapper.className = "L24Text";
 			one = this.translate('ONE');
 			two = this.translate('TWO');
@@ -78,7 +76,7 @@ Module.register("MMM-TextClock",{
 			forty = this.translate('FORTY');
 			fifty = this.translate('FIFTY');
 			oh = this.translate('OH');
-			hundred = this.translate('HUNDRED');
+			zero = this.translate('ZERO');
 
 			function NTT( n ) {
 				// this function is taken from user McShaman @ http://stackoverflow.com/questions/14766951/convert-digits-into-words-with-javascript
@@ -86,7 +84,7 @@ Module.register("MMM-TextClock",{
 
 		    /* Is number zero? */
 		    if( parseInt( string ) === 0 ) {
-		        return hundred;
+		        return zero;
 		    }
 				/* Array of units as words */
 				units = [ ' ', one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, forteen, fifteen, sixteen, seventeen, eighteen, nineteen ];
@@ -164,7 +162,13 @@ Module.register("MMM-TextClock",{
 			lineto.innerHTML = " " + this.config.to24;
 			var linemin = document.createElement('span');
 			linemin.className = "t24m";
-			linemin.innerHTML = " " + NTT(timeMinute);
+
+			ohhundred = NTT(timeMinute);
+			if (ohhundred == this.translate('ZERO')) {
+				ohhundred = this.translate('HUNDRED')
+			}
+
+			linemin.innerHTML = " " + ohhundred;
 			var lineaft = document.createElement('span');
 			lineaft.className = "t24a";
 			lineaft.innerHTML = " " + this.config.after24;
