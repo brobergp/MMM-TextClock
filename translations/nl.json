@@ -1,0 +1,41 @@
+ {
+ 	"ITIS": "HET IS",
+ 	"HALF": "HALF",
+ 	"QUARTER": "KWARTIER",
+ 	"MINUTES": "MINUTEN",
+ 	"TO": "VOOR",
+ 	"PAST": "OVER",
+ 	"ONE": "EEN",
+ 	"TWO": "TWEE",
+ 	"THREE": "DRIE",
+ 	"FOUR": "VIER",
+ 	"FIVE": "VIJF",
+ 	"SIX": "ZES",
+ 	"SEVEN": "ZEVEN",
+ 	"EIGHT": "ACHT",
+ 	"NINE": "NEGEN ",
+ 	"TEN": "TIEN",
+ 	"ELEVEN": "ELF",
+ 	"TWELVE": "TWAALF",
+ 	"TWENTY": "TWINTIG",
+ 	"OCLOCK": "UUR",
+-	
++
+ 	"THIRTEEN": "DERTIEN",
+ 	"FORTEEN": "VEERTIEN",
+ 	"FIFTEEN": "VIJFTIEN",
+ 	"SIXTEEN": "ZESTIEN",
+ 	"SEVENTEEN": "ZEVENTIEN",
+ 	"EIGHTEEN": "ACHTTIEN",
+ 	"NINETEEN": "NEGENTIEN",
+ 	"THIRTY": "DERTIG",
+ 	"FORTY": "VEERTIG",
+ 	"FIFTY": "VIJFTIG",
+ 	"OH": "OH",
+-	"HUNDRED": "HONDERD"
++	"HUNDRED": "HONDERD",
++	"ZERO": "NUL"
+ 
+ 
+ 
+}
