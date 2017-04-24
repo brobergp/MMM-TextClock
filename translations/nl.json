@@ -19,8 +19,7 @@
  	"TWELVE": "TWAALF",
  	"TWENTY": "TWINTIG",
  	"OCLOCK": "UUR",
--	
-+
+
  	"THIRTEEN": "DERTIEN",
  	"FORTEEN": "VEERTIEN",
  	"FIFTEEN": "VIJFTIEN",
@@ -32,9 +31,8 @@
  	"FORTY": "VEERTIG",
  	"FIFTY": "VIJFTIG",
  	"OH": "OH",
--	"HUNDRED": "HONDERD"
-+	"HUNDRED": "HONDERD",
-+	"ZERO": "NUL"
+ 	"HUNDRED": "HONDERD",
+ 	"ZERO": "NUL"
  
  
  
