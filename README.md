@@ -40,7 +40,11 @@ git clone https://github.com/brobergp/MMM-TextClock.git # clone this repository
 
 ## Language support
 
-	Currently the only Language Field layouts that are supported are English (en) and Swedish (sv).
+  as of 2017-04-27 :
+	English, Swedish, German and Dutch.
+
+  German translation by garbleflux
+  Dutch translation by pjkoeleman
 
 ## Configuration options
 

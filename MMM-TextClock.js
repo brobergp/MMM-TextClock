@@ -26,6 +26,8 @@ Module.register("MMM-TextClock",{
 	getTranslations: function() {
 		return {
 			  en: "translations/en.json",
+			  de: "translations/de.json",
+			  nl: "translations/nl.json",
 				sv: "translations/sv.json"
 		}
 	},
@@ -185,9 +187,8 @@ Module.register("MMM-TextClock",{
 			timeHour = now.format("h");
 		  wrapper.className = "L12Field";
 
-			// Swedish layout
-			if (config.language == "sv") {
-
+		// Swedish layout
+		if (config.language == "sv") {
 
 			var ul1 = document.createElement("ul");
 			ul1.className = "ul1";
@@ -210,8 +211,8 @@ Module.register("MMM-TextClock",{
 				ul1.appendChild(lquarter);
 
 
-				var ul2 = document.createElement("ul");
-				ul2.className = "ul2";
+			var ul2 = document.createElement("ul");
+			ul2.className = "ul2";
 
 				var litwenty = document.createElement("li");
 				litwenty.className = "litwenty";
@@ -239,8 +240,8 @@ Module.register("MMM-TextClock",{
 				ul2.appendChild(lpast);
 				ul2.appendChild(lhalf);
 
-				var ul3 = document.createElement("ul");
-				ul3.className = "ul3";
+			var ul3 = document.createElement("ul");
+			ul3.className = "ul3";
 
 				var li1 = document.createElement("li");
 				li1.className = "li1";
@@ -263,8 +264,8 @@ Module.register("MMM-TextClock",{
 				ul3.appendChild(li3);
 				ul3.appendChild(li4);
 
-				var ul4 = document.createElement("ul");
-				ul4.className = "ul4";
+			var ul4 = document.createElement("ul");
+			ul4.className = "ul4";
 
 				var li5 = document.createElement("li");
 				li5.className = "li5";
@@ -287,8 +288,8 @@ Module.register("MMM-TextClock",{
 				ul4.appendChild(li7);
 				ul4.appendChild(li8);
 
-				var ul5 = document.createElement("ul");
-				ul5.className = "ul5";
+			var ul5 = document.createElement("ul");
+			ul5.className = "ul5";
 
 				var li9 = document.createElement("li");
 				li9.className = "li9";
@@ -319,7 +320,6 @@ Module.register("MMM-TextClock",{
 				else {
 					eval("li" + timeHour).style.cssText = this.config.marked;
 			}
-
 			if (timeMinute >= 5 && timeMinute < 10) {
 				lifive.style.cssText = this.config.marked;
 				lpast.style.cssText = this.config.marked;
@@ -374,10 +374,212 @@ Module.register("MMM-TextClock",{
 			wrapper.appendChild(ul5);
 		}
 
+		// German Layout
+		else if (config.language == "de") {
+
+			var ul1 = document.createElement("ul");
+			ul1.className = "ul1";
+
+				var litis = document.createElement("li");
+				litis.className = "litis";
+				litis.style.cssText = this.config.marked;
+				litis.innerHTML = this.translate('ITIS');
+
+				var lifive = document.createElement("li");
+				lifive.className = "lifive";
+				lifive.innerHTML = this.translate('FIVE');
+
+				var liten = document.createElement("li");
+				liten.className = "liten";
+				liten.innerHTML = this.translate('TEN');
+
+				ul1.appendChild(litis);
+				ul1.appendChild(lifive);
+				ul1.appendChild(liten);
+
+			var ul2 = document.createElement("ul");
+			ul2.className = "ul2";
+
+				var lquarter = document.createElement("li");
+				lquarter.className = "lquarter";
+				lquarter.innerHTML = this.translate('QUARTER');
+
+				var litwenty = document.createElement("li");
+				litwenty.className = "litwenty";
+				litwenty.innerHTML = this.translate('TWENTY');
+
+				ul2.appendChild(lquarter);
+				ul2.appendChild(litwenty);
+
+			var ul3 = document.createElement("ul");
+			ul3.className = "ul3";
+
+				var lto = document.createElement("li");
+				lto.className = "lto";
+				lto.innerHTML = this.translate('TO');
+
+				var lpast = document.createElement("li");
+				lpast.className = "lpast";
+				lpast.innerHTML = this.translate('PAST');
+
+				var lhalf = document.createElement("li");
+				lhalf.className = "lhalf";
+				lhalf.innerHTML = this.translate('HALF');
+
+				ul3.appendChild(lto);
+				ul3.appendChild(lpast);
+				ul3.appendChild(lhalf);
+
+			var ul4 = document.createElement("ul");
+			ul4.className = "ul4";
+
+				var li12 = document.createElement("li");
+				li12.className = "li12";
+				li12.innerHTML = this.translate('TWELVE');
+
+				var li2 = document.createElement("li");
+				li2.className = "li2";
+				li2.innerHTML = this.translate('TWO');
+
+				var li3 = document.createElement("li");
+				li3.className = "li3";
+				li3.innerHTML = this.translate('THREE');
+
+				ul4.appendChild(li12);
+				ul4.appendChild(li2);
+				ul4.appendChild(li3);
+
+			var ul5 = document.createElement("ul");
+			ul5.className = "ul5";
+
+				var li4 = document.createElement("li");
+				li4.className = "li4";
+				li4.innerHTML = this.translate('FOUR');
+
+				var li5 = document.createElement("li");
+				li5.className = "li5";
+				li5.innerHTML = this.translate('FIVE');
+
+				var li6 = document.createElement("li");
+				li6.className = "li6";
+				li6.innerHTML = this.translate('SIX');
+
+				ul5.appendChild(li4);
+				ul5.appendChild(li5);
+				ul5.appendChild(li6);
+
+			var ul6 = document.createElement("ul");
+			ul6.className = "ul6";
+
+				var li7 = document.createElement("li");
+				li7.className = "li7";
+				li7.innerHTML = this.translate('SEVEN');
+
+				var li8 = document.createElement("li");
+				li8.className = "li8";
+				li8.innerHTML = this.translate('EIGHT');
+
+				var li9 = document.createElement("li");
+				li9.className = "li9";
+				li9.innerHTML = this.translate('NINE');
+
+				ul6.appendChild(li7);
+				ul6.appendChild(li8);
+				ul6.appendChild(li9);
+
+			var ul7 = document.createElement("ul");
+			ul7.className = "ul7";
+
+				var li10 = document.createElement("li");
+				li10.className = "li10";
+				li10.innerHTML = this.translate('TEN');
+
+				var li11 = document.createElement("li");
+				li11.className = "li11";
+				li11.innerHTML = this.translate('ELEVEN');
+
+				var li1 = document.createElement("li");
+				li1.className = "li1";
+				li1.innerHTML = this.translate('ONE');
+
+				var lioclock = document.createElement("li");
+				lioclock.className = "liocklock";
+				lioclock.innerHTML = this.translate('OCLOCK');
+
+				ul7.appendChild(li10);
+				ul7.appendChild(li11);
+				ul7.appendChild(li1);
+				ul7.appendChild(lioclock);
+
+				if (timeMinute  >= 25 ) {
+					nowplus = moment().add(1, 'h');
+					timeHour = nowplus.format('h');
+					eval("li" + timeHour).style.cssText = this.config.marked;
+				}
+				else {
+					eval("li" + timeHour).style.cssText = this.config.marked;
+			}
+			if (timeMinute >= 0 && timeMinute < 5) {
+				lioclock.style.cssText = this.config.marked;
+			}
+			else if (timeMinute >= 5 && timeMinute < 10) {
+				lifive.style.cssText = this.config.marked;
+				lpast.style.cssText = this.config.marked;
+			}
+			else if (timeMinute >= 10 && timeMinute < 15) {
+				liten.style.cssText = this.config.marked;
+				lpast.style.cssText = this.config.marked;
+			}
+			else if (timeMinute >= 15 && timeMinute < 20) {
+				lquarter.style.cssText = this.config.marked;
+				lpast.style.cssText = this.config.marked;
+			}
+			else if (timeMinute >= 20 && timeMinute < 25) {
+				litwenty.style.cssText = this.config.marked;
+				lpast.style.cssText = this.config.marked;
+			}
+			else if (timeMinute >= 25 && timeMinute < 30) {
+				lifive.style.cssText = this.config.marked
+				lto.style.cssText = this.config.marked;
+				lhalf.style.cssText = this.config.marked;
+			}
+			else if (timeMinute >= 30 && timeMinute < 35) {
+				lhalf.style.cssText = this.config.marked;
+			}
+			else if (timeMinute >= 35 && timeMinute < 40) {
+				lifive.style.cssText = this.config.marked;
+				lpast.style.cssText = this.config.marked;
+				lhalf.style.cssText = this.config.marked;
+			}
+			else if (timeMinute >= 40 && timeMinute < 45) {
+				litwenty.style.cssText = this.config.marked;
+				lto.style.cssText = this.config.marked;
+			}
+			else if (timeMinute >= 45 && timeMinute < 50) {
+				lquarter.style.cssText = this.config.marked;
+				lto.style.cssText = this.config.marked;
+			}
+			else if (timeMinute >= 50 && timeMinute < 55) {
+				liten.style.cssText = this.config.marked;
+				lto.style.cssText = this.config.marked;
+			}
+			else if (timeMinute >= 55 && timeMinute < 60) {
+				lifive.style.cssText = this.config.marked;
+				lto.style.cssText = this.config.marked;
+			}
+			else {}
+
+			wrapper.appendChild(ul1);
+			wrapper.appendChild(ul2);
+			wrapper.appendChild(ul3);
+			wrapper.appendChild(ul4);
+			wrapper.appendChild(ul5);
+			wrapper.appendChild(ul6);
+			wrapper.appendChild(ul7);
+		}
+
 			// Default English Layout
 			else {
-
-
 						var ul1 = document.createElement("ul");
 						ul1.className = "ul1";
 
@@ -398,8 +600,8 @@ Module.register("MMM-TextClock",{
 							ul1.appendChild(lhalf);
 							ul1.appendChild(liten);
 
-							var ul2 = document.createElement("ul");
-							ul2.className = "ul2";
+						var ul2 = document.createElement("ul");
+						ul2.className = "ul2";
 
 							var lquarter = document.createElement("li");
 							lquarter.className = "lquarter";
@@ -412,8 +614,8 @@ Module.register("MMM-TextClock",{
 							ul2.appendChild(lquarter);
 							ul2.appendChild(litwenty);
 
-							var ul3 = document.createElement("ul");
-							ul3.className = "ul3";
+						var ul3 = document.createElement("ul");
+						ul3.className = "ul3";
 
 							var lifive = document.createElement("li");
 							lifive.className = "lifive";
@@ -431,8 +633,8 @@ Module.register("MMM-TextClock",{
 							ul3.appendChild(liminutes);
 							ul3.appendChild(lto);
 
-							var ul4 = document.createElement("ul");
-							ul4.className = "ul4";
+						var ul4 = document.createElement("ul");
+						ul4.className = "ul4";
 
 							var lpast = document.createElement("li");
 							lpast.className = "lpast";
@@ -450,9 +652,8 @@ Module.register("MMM-TextClock",{
 							ul4.appendChild(li2);
 							ul4.appendChild(li3);
 
-							var ul5 = document.createElement("ul");
-							ul5.className = "ul5";
-
+						var ul5 = document.createElement("ul");
+						ul5.className = "ul5";
 
 							var li1 = document.createElement("li");
 							li1.className = "li1";
@@ -470,8 +671,8 @@ Module.register("MMM-TextClock",{
 							ul5.appendChild(li4);
 							ul5.appendChild(li5);
 
-							var ul6 = document.createElement("ul");
-							ul6.className = "ul6";
+						var ul6 = document.createElement("ul");
+						ul6.className = "ul6";
 
 							var li6 = document.createElement("li");
 							li6.className = "li6";
@@ -489,8 +690,8 @@ Module.register("MMM-TextClock",{
 							ul6.appendChild(li7);
 							ul6.appendChild(li8);
 
-							var ul7 = document.createElement("ul");
-							ul7.className = "ul7";
+						var ul7 = document.createElement("ul");
+						ul7.className = "ul7";
 
 							var li9 = document.createElement("li");
 							li9.className = "li9";
@@ -508,8 +709,8 @@ Module.register("MMM-TextClock",{
 							ul7.appendChild(li10);
 							ul7.appendChild(li11);
 
-							var ul8 = document.createElement("ul");
-							ul8.className = "ul8";
+						var ul8 = document.createElement("ul");
+						ul8.className = "ul8";
 
 							var li12 = document.createElement("li");
 							li12.className = "li12";
@@ -521,7 +722,6 @@ Module.register("MMM-TextClock",{
 
 							ul8.appendChild(li12);
 							ul8.appendChild(lioclock);
-
 
 							if (timeMinute  >= 25 ) {
 								nowplus = moment().add(1, 'h');
